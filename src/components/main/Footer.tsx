@@ -20,20 +20,20 @@ const Footer = () => {
                             <Youtube />
                             <span className="text-[15px] ml-[6px]">Youtube</span>
                         </p>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                        <a href="https://github.com/thealpdev" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer">
                             <Github />
                             <span className="text-[15px] ml-[6px]">Github</span>
-                        </p>
+                        </a>
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
                             <span className="text-[15px] ml-[6px]">Discord</span>
                         </p>
                     </div>
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[16px]">Social Media</div>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                        <a href="https://www.linkedin.com/in/kemal-alp-801074305/" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer">
                             <Linkedin />
                             <span className="text-[15px] ml-[6px]">Linkedin</span>
-                        </p>
+                        </a>
                     </div>
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[16px]">About</div>

@@ -39,8 +39,12 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex flex-row gap-5">
-                    <Github className="text-white cursor-pointer hover:text-[#b49bff]" />
-                    <Linkedin className="text-white cursor-pointer hover:text-[#b49bff]" />
+                    <a href="https://github.com/thealpdev" target="_blank" rel="noopener noreferrer">
+                        <Github className="text-white cursor-pointer hover:text-[#b49bff]" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/kemal-alp-801074305/" target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="text-white cursor-pointer hover:text-[#b49bff]" />
+                    </a>
                 </div>
             </div>
         </div>
