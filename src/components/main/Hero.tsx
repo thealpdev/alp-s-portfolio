@@ -11,7 +11,7 @@ const Hero = () => {
                     loop
                     className="w-full h-full object-cover -z-20 opacity-60 mix-blend-screen absolute top-0"
                 >
-                    <source src="/blackhole.webm" type="video/webm" />
+                    <source src="/alp-s-portfolio/blackhole.webm" type="video/webm" />
                 </video>
             </div>
             <HeroContent />
