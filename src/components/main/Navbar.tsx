@@ -1,3 +1,5 @@
+"use client";
+
 import { Socials } from "@/constants";
 import { Github, Linkedin, Menu, X } from "lucide-react";
 import React, { useState } from "react";
