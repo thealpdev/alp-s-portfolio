@@ -16,23 +16,23 @@ const Navbar = () => {
                 </a>
 
                 <div className="w-auto h-full flex flex-row items-center justify-between ml-4 md:ml-20">
-                    <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200">
-                        <a href="#about-me" className="cursor-pointer">
+                    <div className="hidden md:flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200 text-sm lg:text-base">
+                        <a href="#about-me" className="cursor-pointer hover:text-purple-400 transition-colors">
                             About me
                         </a>
-                        <a href="#skills" className="cursor-pointer ml-[20px]">
+                        <a href="#skills" className="cursor-pointer ml-[15px] lg:ml-[20px] hover:text-purple-400 transition-colors">
                             Skills
                         </a>
-                        <a href="#services" className="cursor-pointer ml-[20px]">
+                        <a href="#services" className="cursor-pointer ml-[15px] lg:ml-[20px] hover:text-purple-400 transition-colors">
                             Services
                         </a>
-                        <a href="#projects" className="cursor-pointer ml-[20px]">
+                        <a href="#projects" className="cursor-pointer ml-[15px] lg:ml-[20px] hover:text-purple-400 transition-colors">
                             Projects
                         </a>
-                        <a href="#experience" className="cursor-pointer ml-[20px]">
+                        <a href="#experience" className="cursor-pointer ml-[15px] lg:ml-[20px] hover:text-purple-400 transition-colors">
                             Experience
                         </a>
-                        <a href="#contact" className="cursor-pointer ml-[20px]">
+                        <a href="#contact" className="cursor-pointer ml-[15px] lg:ml-[20px] hover:text-purple-400 transition-colors">
                             Contact
                         </a>
                     </div>
