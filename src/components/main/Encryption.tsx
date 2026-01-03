@@ -11,7 +11,7 @@ const Encryption = () => {
             <div className="absolute w-auto h-auto top-0 z-[5]">
                 <motion.div
                     variants={slideInFromTop}
-                    className="text-[40px] font-medium text-center text-gray-200"
+                    className="text-2xl sm:text-3xl lg:text-4xl font-medium text-center text-gray-200 px-4"
                 >
                     Performance
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -29,14 +29,14 @@ const Encryption = () => {
                         alt="Lock top"
                         width={50}
                         height={50}
-                        className="w-[50px] translate-y-5 transition-all duration-200 group-hover:translate-y-11"
+                        className="w-[30px] sm:w-[40px] lg:w-[50px] h-auto translate-y-5 transition-all duration-200 group-hover:translate-y-11"
                     />
                     <Image
                         src="/alp-s-portfolio/LockMain.png"
                         alt="Lock Main"
                         width={70}
                         height={70}
-                        className=" z-10"
+                        className="w-[40px] sm:w-[50px] lg:w-[70px] h-auto z-10"
                     />
                 </div>
 
@@ -45,7 +45,7 @@ const Encryption = () => {
                 </div>
             </div>
             <div className="absolute z-[20] bottom-[10px] px-[5px]">
-                <div className="cursive text-[20px] font-medium text-center text-gray-300">
+                <div className="cursive text-sm sm:text-base lg:text-xl font-medium text-center text-gray-300 px-4">
                     Secure your data with end-to-end encryption
                 </div>
             </div>

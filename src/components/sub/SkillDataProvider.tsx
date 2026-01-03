@@ -30,8 +30,15 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
             animate={inView ? "visible" : "hidden"}
             custom={index}
             transition={{ delay: index * animationDelay }}
+            className="flex items-center justify-center"
         >
-            <Image src={src} width={width} height={height} alt="skill image" />
+            <Image 
+                src={src} 
+                width={width} 
+                height={height} 
+                alt="skill image"
+                className="w-auto h-auto max-w-[50px] sm:max-w-[70px] lg:max-w-[80px]"
+            />
         </motion.div>
     );
 };
