@@ -50,9 +50,9 @@ const Navbar = () => {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={toggleMenu}
-                        className="md:hidden flex items-center justify-center text-white hover:text-purple-400 transition-colors mr-4"
+                        className="md:hidden flex items-center justify-center text-white hover:text-purple-400 transition-all duration-300 mr-2 p-2 hover:bg-purple-900/20 rounded-lg"
                     >
-                        {isOpen ? <X size={24} /> : <Menu size={24} />}
+                        {isOpen ? <X size={24} className="animate-rotate-90" /> : <Menu size={24} />}
                     </button>
 
                     {/* Social Icons */}
@@ -69,18 +69,48 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="fixed top-[65px] left-0 w-full bg-[#0d0d1f] bg-opacity-95 backdrop-blur-md z-40 md:hidden border-b border-[#7042f861] animate-in fade-in duration-200">
-                    <div className="flex flex-col items-center justify-center py-6 px-4 gap-4">
-                        {navLinks.map((link) => (
+                <div className="fixed top-[65px] left-0 w-full bg-gradient-to-b from-[#0d0d1f] via-[#1a0f2e] to-[#0d0d1f] backdrop-blur-lg z-40 md:hidden border-b border-[#7042f861] shadow-xl animate-in slide-in-from-top-2 duration-300">
+                    <div className="flex flex-col items-stretch justify-start py-2 px-0 gap-0 max-h-[calc(100vh-65px)] overflow-y-auto">
+                        {navLinks.map((link, index) => (
                             <a
                                 key={link.href}
                                 href={link.href}
                                 onClick={() => setIsOpen(false)}
-                                className="w-full text-center py-3 text-gray-200 hover:text-purple-400 hover:bg-[#1a1a2e] rounded-lg transition-all duration-300 text-sm sm:text-base"
+                                className="px-6 py-4 text-gray-200 hover:text-purple-400 hover:bg-purple-900/20 transition-all duration-300 text-sm font-medium border-b border-[#7042f861]/30 hover:border-purple-500/50 animate-in fade-in slide-in-from-left-4 duration-300"
+                                style={{
+                                    animationDelay: `${index * 50}ms`,
+                                    animationFillMode: "both"
+                                }}
                             >
-                                {link.label}
+                                <div className="flex items-center justify-between">
+                                    <span>{link.label}</span>
+                                    <span className="text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                                </div>
                             </a>
                         ))}
+                        
+                        {/* Divider */}
+                        <div className="h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent my-2"></div>
+                        
+                        {/* Social Links in Mobile Menu */}
+                        <div className="px-6 py-4 flex flex-row gap-6 justify-center items-center border-b border-[#7042f861]/30">
+                            <a 
+                                href="https://github.com/thealpdev" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="text-gray-300 hover:text-purple-400 transition-all duration-300 hover:scale-125"
+                            >
+                                <Github size={20} />
+                            </a>
+                            <a 
+                                href="https://www.linkedin.com/in/kemal-alp-801074305/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="text-gray-300 hover:text-purple-400 transition-all duration-300 hover:scale-125"
+                            >
+                                <Linkedin size={20} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             )}
