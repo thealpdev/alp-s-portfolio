@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // Siteyi statik HTML dosyalarına dönüştürür
+  output: 'export',
   images: {
-    unoptimized: true, // GitHub Pages resim optimizasyonu yapamadığı için bu gereklidir
+    unoptimized: true,
   },
+  // GitHub Pages alt klasörde çalıştığı için bu iki satır şart:
+  basePath: "/alp-s-portfolio",
+  assetPrefix: "/alp-s-portfolio/",
 };
 
 export default nextConfig;
