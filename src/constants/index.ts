@@ -1,61 +1,61 @@
 export const Frontend_skill = [
     {
         skill_name: "Html 5",
-        Image: "/skills/html.png",
+        Image: "/alp-s-portfolio/skills/html.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "Css",
-        Image: "/skills/css.png",
+        Image: "/alp-s-portfolio/skills/css.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "Java Script",
-        Image: "/skills/js.png",
+        Image: "/alp-s-portfolio/skills/js.png",
         width: 65,
         height: 65,
     },
     {
         skill_name: "Tailwind Css",
-        Image: "/skills/tailwind.png",
+        Image: "/alp-s-portfolio/skills/tailwind.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "Material UI",
-        Image: "/skills/mui.png",
+        Image: "/alp-s-portfolio/skills/mui.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "React",
-        Image: "/skills/react.png",
+        Image: "/alp-s-portfolio/skills/react.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "Redux",
-        Image: "/skills/redux.png",
+        Image: "/alp-s-portfolio/skills/redux.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "React Query",
-        Image: "/skills/reactquery.png",
+        Image: "/alp-s-portfolio/skills/reactquery.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "Type Script",
-        Image: "/skills/ts.png",
+        Image: "/alp-s-portfolio/skills/ts.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "Next js 13",
-        Image: "/skills/next.png",
+        Image: "/alp-s-portfolio/skills/next.png",
         width: 80,
         height: 80,
     },
@@ -64,49 +64,49 @@ export const Frontend_skill = [
 export const Backend_skill = [
     {
         skill_name: "Node js",
-        Image: "/skills/node.png",
+        Image: "/alp-s-portfolio/skills/node.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "Express js",
-        Image: "/skills/express.png",
+        Image: "/alp-s-portfolio/skills/express.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "Mongo db",
-        Image: "/skills/mongodb.png",
+        Image: "/alp-s-portfolio/skills/mongodb.png",
         width: 40,
         height: 40,
     },
     {
         skill_name: "Fire base",
-        Image: "/skills/firebase.png",
+        Image: "/alp-s-portfolio/skills/firebase.png",
         width: 55,
         height: 55,
     },
     {
         skill_name: "Postger SQL",
-        Image: "/skills/postgresql.png",
+        Image: "/alp-s-portfolio/skills/postgresql.png",
         width: 70,
         height: 70,
     },
     {
         skill_name: "My SQL",
-        Image: "/skills/mysql.png",
+        Image: "/alp-s-portfolio/skills/mysql.png",
         width: 70,
         height: 70,
     },
     {
         skill_name: "Prisma",
-        Image: "/skills/prisma.png",
+        Image: "/alp-s-portfolio/skills/prisma.png",
         width: 70,
         height: 70,
     },
     {
         skill_name: "Graphql",
-        Image: "/skills/graphql.png",
+        Image: "/alp-s-portfolio/skills/graphql.png",
         width: 80,
         height: 80,
     },
@@ -115,26 +115,26 @@ export const Backend_skill = [
 export const Full_stack = [
     {
         skill_name: "React Native",
-        Image: "/skills/reactnative.png",
+        Image: "/alp-s-portfolio/skills/reactnative.png",
         width: 70,
         height: 70,
     },
     {
         skill_name: "Tauri",
-        Image: "/skills/tauri.png",
+        Image: "/alp-s-portfolio/skills/tauri.png",
         width: 70,
         height: 70,
     },
     {
         skill_name: "Docker",
-        Image: "/skills/docker.png",
+        Image: "/alp-s-portfolio/skills/docker.png",
         width: 70,
         height: 70,
     },
 
     {
         skill_name: "Figma",
-        Image: "/skills/figma.png",
+        Image: "/alp-s-portfolio/skills/figma.png",
         width: 50,
         height: 50,
     },
@@ -144,7 +144,7 @@ export const Full_stack = [
 export const Other_skill = [
     {
         skill_name: "Go",
-        Image: "/skills/go.png",
+        Image: "/alp-s-portfolio/skills/go.png",
         width: 60,
         height: 60,
     },
@@ -153,14 +153,14 @@ export const Other_skill = [
 export const Socials = [
     {
         name: "Discord",
-        src: "/instagram.svg",
+        src: "/alp-s-portfolio/instagram.svg",
     },
     {
         name: "Facebook",
-        src: "/facebook.svg",
+        src: "/alp-s-portfolio/facebook.svg",
     },
     {
         name: "Instagram",
-        src: "/discord.svg",
+        src: "/alp-s-portfolio/discord.svg",
     },
 ];
