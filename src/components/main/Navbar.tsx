@@ -23,9 +23,17 @@ const Navbar = () => {
         <>
             <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 sm:px-10">
                 <div className="w-full max-w-7xl h-full flex flex-row items-center justify-between m-auto px-[10px]">
+                    {/* Mobile Menu Button - Left */}
+                    <button
+                        onClick={toggleMenu}
+                        className="md:hidden flex items-center justify-center text-white hover:text-purple-400 transition-all duration-300 p-2 hover:bg-purple-900/20 rounded-lg"
+                    >
+                        {isOpen ? <X size={24} className="animate-rotate-90" /> : <Menu size={24} />}
+                    </button>
+
                     <a
                         href="#about-me"
-                        className="h-auto w-auto flex flex-row items-center"
+                        className="h-auto w-auto flex flex-row items-center flex-1 md:flex-none"
                     >
                         <span className="font-bold ml-[10px] hidden sm:block text-gray-300 text-sm sm:text-base">
                             Alp's Portfolio
@@ -46,14 +54,6 @@ const Navbar = () => {
                             ))}
                         </div>
                     </div>
-
-                    {/* Mobile Menu Button */}
-                    <button
-                        onClick={toggleMenu}
-                        className="md:hidden flex items-center justify-center text-white hover:text-purple-400 transition-all duration-300 mr-2 p-2 hover:bg-purple-900/20 rounded-lg"
-                    >
-                        {isOpen ? <X size={24} className="animate-rotate-90" /> : <Menu size={24} />}
-                    </button>
 
                     {/* Social Icons */}
                     <div className="flex flex-row gap-4 sm:gap-5">
